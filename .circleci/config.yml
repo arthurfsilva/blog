@@ -23,6 +23,8 @@ jobs:
       BUNDLE_RETRY: "3"
       PGHOST: 127.0.0.1
       PGUSER: circleci-demo-ruby
+      DB_USERNAME: circleci-demo-ruby
+      DB_PASSWORD: ""
       PGPASSWORD: ""
       RAILS_ENV: test
       
