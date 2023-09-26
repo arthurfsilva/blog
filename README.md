@@ -1,24 +1,22 @@
-# README
+# API Blog
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/arthurfsilva/blog/tree/main.svg?style=svg&circle-token=aa69675f8f3bb81bdefd66a75134b23b026acc87)](https://dl.circleci.com/status-badge/redirect/gh/arthurfsilva/blog/tree/main)
 
-Things you may want to cover:
+An example of api in rails
+Check api health (tests, code smells, codestandard) in label above 
 
-* Ruby version
+## To Run
+  Copy .env to .env.development and fill with database data
 
-* System dependencies
+  ``bundle install``
 
-* Configuration
+  ``rails s``
 
-* Database creation
+## Tests
+  ``bundle exec rspec``
 
-* Database initialization
+## Lint
+  ``bundle exec rubocop``
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## CodeSmells
+  ``bundle exec reek``
