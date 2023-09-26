@@ -38,3 +38,6 @@ en:
 
   application_controller:
     not_found: '404 Not Found'
+
+  posts_controller:
+    post_not_found: 'Post not found'
