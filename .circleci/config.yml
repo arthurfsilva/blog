@@ -17,6 +17,7 @@ jobs:
           PGHOST: 127.0.0.1
           PGUSER: circleci
           RAILS_ENV: test
+      - image: postgres:13
     executor: ruby/default
     steps:
       - checkout
