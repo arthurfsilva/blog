@@ -30,4 +30,8 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  users_controller:
+    user_not_found: 'User not found'
+
+  authentication_controller:
+    unauthorized: 'unauthorized'
