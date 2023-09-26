@@ -1,6 +1,6 @@
 class ApplicationController < ActionController::API
   def not_found
-    render json: { error: 'not_found' }
+    render json: { error: I18n.t('application_controller.not_found') }, status: :not_found
   end
 
   def authorize_request

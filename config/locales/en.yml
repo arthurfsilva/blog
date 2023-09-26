@@ -35,3 +35,6 @@ en:
 
   authentication_controller:
     unauthorized: 'unauthorized'
+
+  application_controller:
+    not_found: '404 Not Found'
