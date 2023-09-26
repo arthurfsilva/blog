@@ -1,0 +1,8 @@
+first:
+  name: Brian
+  body: This is an example of content
+  post: first
+second:
+  name: Ana
+  body: This is an example of content
+  post: first
