@@ -13,12 +13,11 @@ jobs:
   build:
     docker:
       - image: cimg/ruby:3.2.2
-      - image: circleci/postgres:9.6
+      - image: circleci/postgres:9.5-alpine
         environment:
           POSTGRES_USER: circleci-demo-ruby
           POSTGRES_DB: blog_test
           POSTGRES_PASSWORD: ""
-          POSTGRES_HOST_AUTH_METHOD: trust
     environment:
       BUNDLE_JOBS: "3"
       BUNDLE_RETRY: "3"
@@ -26,9 +25,13 @@ jobs:
       PGUSER: circleci-demo-ruby
       PGPASSWORD: ""
       RAILS_ENV: test
+      
     executor: ruby/default
     steps:
       - checkout
+      - run:
+          name: Wait for DB
+          command: dockerize -wait tcp://localhost:5432 -timeout 1m
       - run:
           name: Which bundler?
           command: bundle -v
