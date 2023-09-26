@@ -16,7 +16,9 @@ jobs:
         environment:
           PGHOST: 127.0.0.1
           PGUSER: circleci
+          DB_USERNAME: circleci
           RAILS_ENV: test
+          POSTGRES_HOST_AUTH_METHOD: trust
       - image: postgres:13
     executor: ruby/default
     steps:
